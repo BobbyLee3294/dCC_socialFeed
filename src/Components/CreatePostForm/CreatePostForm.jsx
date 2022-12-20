@@ -1,30 +1,30 @@
 import { useState } from "react";
 
 const CreatePostForm = (props) => {
-    //**TODO #3: Create a form with 2 input fields. One for the user's name and one for the body of their post
-    //Each should be bound to its own state variable */
+  //**TODO #3: Create a form with 2 input fields. One for the user's name and one for the body of their post
+  //Each should be bound to its own state variable */
   const [userName, setUserName] = useState("");
   const [postBody, setPostBody] = useState("");
-    //**TODO #3a: Implement a handleSubmit method for your form. That function should create a new post object,
-    // add it the existing array of posts and update the App.js state variable with the new array.*/
+  //**TODO #3a: Implement a handleSubmit method for your form. That function should create a new post object,
+  // add it the existing array of posts and update the App.js state variable with the new array.*/
   function handleSubmit(event) {
     event.preventDefault();
     let newPost = {
-      userName: userName,
-      postBody: postBody,
+      name: userName,
+      body: postBody,
     };
     // console.log(newPost);
-    props.addNewPostProperty(newPost);
+    props.addNewPost(newPost);
   }
 
   return (
-    <div class="container">
+    <div className="container">
       <form action="action_page.php" onSubmit={handleSubmit}>
-        <div class="mb-3 row">
-          <label for="userName" className="col-sm-1">
+        <div className="mb-3 row">
+          <label htmlFor="userName" className="col-sm-1">
             Name
           </label>
-          <div class="col-sm-11">
+          <div className="col-sm-11">
             <input
               type="text"
               id="postUserName"
@@ -34,11 +34,11 @@ const CreatePostForm = (props) => {
             />
           </div>
         </div>
-        <div class="mb-3 row">
-          <label for="postBody" className="col-sm-1">
+        <div className="mb-3 row">
+          <label htmlFor="postBody" className="col-sm-1">
             Post
           </label>
-          <div class="col-sm-11">
+          <div className="col-sm-11">
             <textarea
               id="postBody"
               placeholder="Write something.."
