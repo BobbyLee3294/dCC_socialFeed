@@ -20,7 +20,7 @@ const CreatePostForm = (props) => {
 
   return (
     <div className="container">
-      <form id="post-form" action="action_page.php" onSubmit={handleSubmit}>
+      <form id="post-form" onSubmit={handleSubmit}>
         <div className="mb-3 row">
           <label htmlFor="userName" className="col-sm-1">
             Name
