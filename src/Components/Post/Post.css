@@ -1,12 +1,19 @@
 #postLayout {
-    border-bottom: 1px solid black;
+  /* padding: 12px; */
+  border-bottom: 1px solid black;
 }
 #postName {
-    font-weight: bold;
+  font-weight: bold;
+  padding: 2px 10px;
 }
-#thumbsUp {
-float: right;
+#postBody {
+  padding: 0px 10px;
 }
-#thumbsDown {
-float: right;
+button {
+  border: none;
+  background-color: white;
+
+  position: relative;
+  bottom: 10px;
+  left: 85%;
 }
