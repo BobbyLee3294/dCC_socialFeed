@@ -1,12 +1,11 @@
-#postUserName {
+#formName {
   width: 75%;
   margin: 8px 0;
   box-sizing: border-box;
 }
-#postBody {
+#formBody {
   width: 75%;
   height: 150px;
-  padding: 12px 20px;
   box-sizing: border-box;
   resize: none;
 }
