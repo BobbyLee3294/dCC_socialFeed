@@ -1,21 +1,24 @@
 import React, { useState } from "react";
-import Post from "./Components/Post/Post";
 import PostList from "./Components/PostList/PostList";
 import CreatePostForm from "./Components/CreatePostForm/CreatePostForm";
 import NavBar from "./Components/NavBar/NavBar";
 // import './Components/App.css';
 
 function App() {
-  const [post, setPost] = useState([
+  const [posts, setPosts] = useState([
     {
       name: "Jimbo Jones",
-      post: "This is my first post! Give me a like, please!",
+      body: "This is my first post! Give me a like, please!",
+    },
+    {
+      name: "Bartholomew Simpson",
+      body: "Eat my shorts!",
     },
   ]);
 
   function addNewPost(entry) {
-    let tempPosts = [entry, ...post];
-    setPost(tempPosts);
+    let tempPosts = [entry, ...posts];
+    setPosts(tempPosts);
   }
   return (
     <div className="App">
@@ -29,8 +32,7 @@ function App() {
           <CreatePostForm addNewPost={addNewPost} />
         </div>
         <div className="row">
-          <Post />
-          <PostList />
+          <PostList  parentPosts={posts}/>
         </div>
       </div>
     </div>
