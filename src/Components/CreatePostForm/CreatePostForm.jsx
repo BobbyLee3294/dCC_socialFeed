@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./CreatePostForm.css";
 
 const CreatePostForm = (props) => {
   //**TODO #3: Create a form with 2 input fields. One for the user's name and one for the body of their post
@@ -15,14 +16,13 @@ const CreatePostForm = (props) => {
     };
     // console.log(newPost);
     props.addNewPost(newPost);
-    document.getElementById("post-form").reset();
   }
 
   return (
     <div className="container">
       <form id="post-form" onSubmit={handleSubmit}>
-        <div className="mb-3 row">
-          <label htmlFor="userName" className="col-sm-1">
+        <div className="mb-1 row">
+          <label htmlFor="userName" className="col-sm-1" id="labelName">
             Name
           </label>
           <div className="col-sm-11">
@@ -31,12 +31,11 @@ const CreatePostForm = (props) => {
               id="postUserName"
               value={userName}
               onChange={(event) => setUserName(event.target.value)}
-              size="50"
             />
           </div>
         </div>
-        <div className="mb-3 row">
-          <label htmlFor="postBody" className="col-sm-1">
+        <div className="mb-auto row">
+          <label htmlFor="postBody" className="col-sm-1" id="labelBody">
             Post
           </label>
           <div className="col-sm-11">
@@ -44,13 +43,12 @@ const CreatePostForm = (props) => {
               id="postBody"
               placeholder="Write something.."
               value={postBody}
-              rows="4"
-              maxLength="500"
+              maxLength="120"
               onChange={(event) => setPostBody(event.target.value)}
             />
           </div>
         </div>
-        <input type="submit" value="Create" />
+          <input id="submit-btn" type="submit" value="Create" />
       </form>
     </div>
   );

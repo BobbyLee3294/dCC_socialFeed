@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PostList from "./Components/PostList/PostList";
 import CreatePostForm from "./Components/CreatePostForm/CreatePostForm";
 import NavBar from "./Components/NavBar/NavBar";
-// import './Components/App.css';
+import "./App.css";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -22,17 +22,21 @@ function App() {
   }
   return (
     <div className="App">
-      <div className="container-fluid">
+      <header>
         <div id="NavBar">
           <NavBar />
         </div>
-      </div>
+      </header>
       <div className="container-md">
         <div className="row">
-          <CreatePostForm addNewPost={addNewPost} />
+          <div className="border-box">
+            <CreatePostForm addNewPost={addNewPost} />
+          </div>
         </div>
         <div className="row">
-          <PostList  parentPosts={posts}/>
+          <div className="border-box">
+            <PostList parentPosts={posts} />
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import { FaThumbsUp } from "react-icons/fa";
 import { FaThumbsDown } from "react-icons/fa";
+import './Post.css';
+
 const Post = (props) => {
   return (
     //**TODO #1: Create a template which will include the user's name, the body of the post and the "like" and "dislike" buttons */

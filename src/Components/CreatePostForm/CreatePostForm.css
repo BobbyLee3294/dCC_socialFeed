@@ -1,0 +1,21 @@
+#postUserName {
+  width: 75%;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#postBody {
+  width: 75%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  resize: none;
+}
+#submit-btn {
+  width: 20%;
+  background-color: rgb(24, 103, 171);
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 16px;
+  float: right;
+}

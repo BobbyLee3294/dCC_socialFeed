@@ -1,0 +1,13 @@
+.border-box {
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 10px 10px 9px rgb(188,202,198);
+}
+.App {
+    background-color: rgb(226,242,238);
+}

@@ -1,0 +1,12 @@
+#postLayout {
+    border-bottom: 1px solid black;
+}
+#postName {
+    font-weight: bold;
+}
+#thumbsUp {
+float: right;
+}
+#thumbsDown {
+float: right;
+}
