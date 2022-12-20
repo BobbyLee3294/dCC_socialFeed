@@ -6,10 +6,9 @@ const Post = (props) => {
     //**TODO #4: Build out the functionality of the "like" and "dislike" 
     //create a function for each button when they are clicked then bind them to an onClick event*/
     <div id="postLayout">
-      <p id="postName">Name of poster</p>
+      <p id="postName">{props.post.name}</p>
       <p id="postBody">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-        consequat dictum lorem orci aliquam.
+        {props.post.body}
       </p>
       <button id="thumbsUp">
         <FaThumbsUp />
