@@ -1,3 +1,9 @@
+.likeColored{
+    color: green;
+}
+.dislikeColored{
+    color: red;
+}
 #postLayout {
   /* padding: 12px; */
   border-bottom: 1px solid black;
