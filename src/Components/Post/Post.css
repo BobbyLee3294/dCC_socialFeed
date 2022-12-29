@@ -1,7 +1,7 @@
-.likeColored {
+.likeactive {
   color: green;
 }
-.dislikeColored {
+.dislikeactive {
   color: red;
 }
 #postLayout {
