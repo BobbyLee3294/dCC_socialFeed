@@ -13,7 +13,9 @@ const Post = (props) => {
     //**TODO #1: Create a template which will include the user's name, the body of the post and the "like" and "dislike" buttons */
     <div id="postLayout">
       <p id="postName">{props.post.name}</p>
-      <span className="xyz">{`${new Date().toLocaleString()}`}</span>
+      {/* 
+      Insert date of post added here
+      */}
       <p id="postBody">{props.post.body}</p>
       <LikeButton />
     </div>
