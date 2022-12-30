@@ -15,18 +15,6 @@ const Post = (props) => {
       <p id="postName">{props.post.name}</p>
       <span className="xyz">{`${new Date().toLocaleString()}`}</span>
       <p id="postBody">{props.post.body}</p>
-      {/* <button
-        onClick={likeFunction}
-        className={[likeactive ? "likeactive" : null, "button"].join(" ")}
-      >
-        <FaThumbsUp />
-      </button>
-      <button
-        onClick={dislikeFunction}
-        className={[dislikeactive ? "dislikeactive" : null, "button"].join(" ")}
-      >
-        <FaThumbsDown />
-      </button> */}
       <LikeButton />
     </div>
   );
